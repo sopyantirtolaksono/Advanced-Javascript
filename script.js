@@ -41,17 +41,46 @@
 // let ferry	= Student("Ferry", 50);
 
 // 3. Constructor Function
-function Student(name, energy) {
-	this.name 	= name;
-	this.energy = energy;
-	this.eat = function(portion) {
+// function Student(name, energy) {
+// 	this.name 	= name;
+// 	this.energy = energy;
+// 	this.eat = function(portion) {
+// 		this.energy += portion;
+// 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy eat:)`);
+// 	}
+// 	this.play = function(hours) {
+// 		this.energy -= hours;
+// 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy play:)`);
+// 	}
+// }
+
+// let sopyan = new Student("Sopyan", 50);
+
+// 4. Object.create
+// Create Object Literal
+let methodStudent = {
+	eat: function(portion) {
 		this.energy += portion;
 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy eat:)`);
-	}
-	this.play = function(hours) {
+	},
+	play: function(hours) {
 		this.energy -= hours;
 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy play:)`);
+	},
+	sleep: function(hours) {
+		this.energy += hours * 2;
+		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy sleep:)`);
 	}
 }
 
-let sopyan = new Student("Sopyan", 50);
+// Create Declaration Function
+function Student(name, energy) {
+	let student = Object.create(methodStudent);
+
+	student.name 	= name;
+	student.energy 	= energy;
+
+	return student;
+}
+
+let sopyan = Student("Sopyan", 10);
