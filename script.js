@@ -87,28 +87,56 @@
 
 // 5. Prototype
 // Main Object(Created with constructor function)
-function Student(name, energy) {
-	this.name = name;
-	this.energy = energy;
-}
+// function Student(name, energy) {
+// 	this.name = name;
+// 	this.energy = energy;
+// }
 
 // Create Method with Prototype
-// Method eat()
-Student.prototype.eat = function(portion) {
-	this.energy += portion;
-	return `Hello ${this.name}, now your energy is ${this.energy}`;
-}
-// Method sleep()
-Student.prototype.sleep = function(hours) {
-	this.energy += hours;
-	return `Hello ${this.name}, now your energy is ${this.energy}`;
-}
-// Method play()
-Student.prototype.play = function(hours) {
-	this.energy -= hours;
-	return `Hello ${this.name}, now your energy is ${this.energy}`;
-}
+// // Method eat()
+// Student.prototype.eat = function(portion) {
+// 	this.energy += portion;
+// 	return `Hello ${this.name}, now your energy is ${this.energy}`;
+// }
+// // Method sleep()
+// Student.prototype.sleep = function(hours) {
+// 	this.energy += hours;
+// 	return `Hello ${this.name}, now your energy is ${this.energy}`;
+// }
+// // Method play()
+// Student.prototype.play = function(hours) {
+// 	this.energy -= hours;
+// 	return `Hello ${this.name}, now your energy is ${this.energy}`;
+// }
 
 // Instantiation Object
+// let sopyan = new Student("Sopyan", 15);
+// let ferry = new Student("Ferry", 20);
+
+// 6. Class
+// Parent Class
+class Student {
+	constructor(name, energy) {
+		this.name = name;
+		this.energy = energy;
+	}
+	// Method eat()
+	eat(portion) {
+		this.energy += portion;
+		return `Hello ${this.name}, now your energy is ${this.energy}`;
+	}
+	// Method sleep()
+	sleep(hours) {
+		this.energy += hours;
+		return `Hello ${this.name}, now your energy is ${this.energy}`;
+	}
+	// Method play()
+	play(hours) {
+		this.energy -= hours;
+		return `Hello ${this.name}, now your energy is ${this.energy}`;
+	}
+}
+
+// Instantiation Class Object
 let sopyan = new Student("Sopyan", 15);
 let ferry = new Student("Ferry", 20);
