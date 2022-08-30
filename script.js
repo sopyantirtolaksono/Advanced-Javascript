@@ -58,29 +58,57 @@
 
 // 4. Object.create
 // Create Object Literal
-let methodStudent = {
-	eat: function(portion) {
-		this.energy += portion;
-		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy eat:)`);
-	},
-	play: function(hours) {
-		this.energy -= hours;
-		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy play:)`);
-	},
-	sleep: function(hours) {
-		this.energy += hours * 2;
-		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy sleep:)`);
-	}
-}
+// let methodStudent = {
+// 	eat: function(portion) {
+// 		this.energy += portion;
+// 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy eat:)`);
+// 	},
+// 	play: function(hours) {
+// 		this.energy -= hours;
+// 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy play:)`);
+// 	},
+// 	sleep: function(hours) {
+// 		this.energy += hours * 2;
+// 		console.log(`Hello ${this.name}, your energy is ${this.energy}. Happy sleep:)`);
+// 	}
+// }
 
 // Create Declaration Function
+// function Student(name, energy) {
+// 	let student = Object.create(methodStudent);
+
+// 	student.name 	= name;
+// 	student.energy 	= energy;
+
+// 	return student;
+// }
+
+// let sopyan = Student("Sopyan", 10);
+
+// 5. Prototype
+// Main Object(Created with constructor function)
 function Student(name, energy) {
-	let student = Object.create(methodStudent);
-
-	student.name 	= name;
-	student.energy 	= energy;
-
-	return student;
+	this.name = name;
+	this.energy = energy;
 }
 
-let sopyan = Student("Sopyan", 10);
+// Create Method with Prototype
+// Method eat()
+Student.prototype.eat = function(portion) {
+	this.energy += portion;
+	return `Hello ${this.name}, now your energy is ${this.energy}`;
+}
+// Method sleep()
+Student.prototype.sleep = function(hours) {
+	this.energy += hours;
+	return `Hello ${this.name}, now your energy is ${this.energy}`;
+}
+// Method play()
+Student.prototype.play = function(hours) {
+	this.energy -= hours;
+	return `Hello ${this.name}, now your energy is ${this.energy}`;
+}
+
+// Instantiation Object
+let sopyan = new Student("Sopyan", 15);
+let ferry = new Student("Ferry", 20);
