@@ -52,7 +52,7 @@
 // console.log(a());
 // console.log(a());
 
-// Closure with Immidietly Invoke Function
+// Closure with Immediately Invoked Function Expression(IIFE -> Old Version[ES5])
 // Outer Function
 let add = (function() {
 	// Variabel counter to be private
