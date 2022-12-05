@@ -16,3 +16,8 @@
 1. Mapping Data in Arrow Function Oneline & without Oneline
 2. Mapping Data in Arrow Function & Create New Object
 3. Keyword "This" in Arrow Function
+
+=> Higher Order Function
+1. Outer function return Inner function it's Higher Order Function
+2. Callback also Higher Order Function
+3. Filter, Map, Reduce, ... it's Higher Order Function
