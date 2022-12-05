@@ -1,7 +1,4 @@
 // HIGHER ORDER FUNCTION
-// Outer function return Inner function it's Higher Order Function
-// Callback also Higher Order Function
-// Filter, Map, Reduce, ... it's Higher Order Function
 
 // Array of Numbers
 const numbers = [2, 3, 4, 1];
