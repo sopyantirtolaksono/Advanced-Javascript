@@ -35,7 +35,7 @@
 // <h3>${student.age}</h3>
 // </div>`;
 
-// HTML Fragments with Looping
+// 4.1. HTML Fragments with Looping
 // const students = [
 //     {
 //         name : "Sopyan",
@@ -62,7 +62,7 @@
 // }).join("")}
 // </div>`;
 
-// HTML Fragments with Conditionals(Ternary)
+// 4.2. HTML Fragments with Conditionals(Ternary)
 // const song = {
 //     title   : "Jalan Hidupku",
 //     artist  : "Alta",
@@ -78,7 +78,7 @@
 // </ul>
 // </div>`;
 
-// HTML Fragments with Nested
+// 4.3. HTML Fragments with Nested
 // const student = {
 //     name  : "Sopyan",
 //     nim   : "2114R0879",
@@ -112,7 +112,7 @@
 // document.body.innerHTML = el;
 
 
-// 6. Tagged Template Literals
+// 5. Tagged Template Literals
 // Create variabels
 const name  = "Sopyan";
 const age   = 17;
