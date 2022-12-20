@@ -27,7 +27,7 @@
 2. Embedded Expressions
 3. Multi Line String
 4. HTML Fragments
-    4.1. HTML Fragments with Looping
-    4.2. HTML Fragments with Conditionals(Ternary)
-    4.3. HTML Fragments with Nested
+    - HTML Fragments with Looping
+    - HTML Fragments with Conditionals(Ternary)
+    - HTML Fragments with Nested
 5. Tagged Template Literals
