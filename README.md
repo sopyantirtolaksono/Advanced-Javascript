@@ -31,3 +31,18 @@
     - HTML Fragments with Conditionals(Ternary)
     - HTML Fragments with Nested
 5. Tagged Template Literals
+
+## Destructuring Assignment
+1. Destructuring Array
+    - Normal
+    - Skipping Items
+    - Swap Items
+    - Return Value on Function
+    - Rest Parameter
+2. Destructuring Object
+    - Normal
+    - Assign without Declare Object
+    - Assign to New Variable
+    - Assign to New Variable(Rename) & Give Default Value
+    - Take Field on Object, after Sent as Param for Function
+    - Nested Destructuring
