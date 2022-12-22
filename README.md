@@ -46,3 +46,13 @@
     - Assign to New Variable(Rename) & Give Default Value
     - Take Field on Object, after Sent as Param for Function
     - Nested Destructuring
+
+## For Of & For In
+1. For Of => Iterable Object(Array, String, NodeList, Arguments, TypedArray, Map, Set, User-Defined Iterables)
+    - Looping Array
+    - Looping String
+    - Looping Array with Index
+    - Looping NodeList
+    - Looping Arguments
+2. For In => Enumerable(Property/Key of Object)
+    - Looping Object
