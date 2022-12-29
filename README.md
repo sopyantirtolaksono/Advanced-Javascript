@@ -56,3 +56,32 @@
     - Looping Arguments
 2. For In => Enumerable(Property/Key of Object)
     - Looping Object
+
+## Spread Operator
+1. Breaking Iterables Into a Single Element
+2. Concat 2 Arrays or more with Spread Operator
+3. Copying Array
+4. Implementation on HTML Element
+
+## Rest Parameter
+1. Implementation on Arguments
+2. Implementation on SUM Function
+3. Implementation on Array Destructuring
+4. Implementation on Object Destructuring
+5. Implementation on Filter Function
+
+## Callback
+1. Synchronous Callback
+2. Asynchronous Callback
+
+## Promise
+1. Create New Promise
+2. Promise.all
+3. Promise.race
+
+## Async & Await
+1. Without Async & Await
+2. With Async & Await
+
+
+
